@@ -41,7 +41,7 @@ app.post("/basic",(req,res)=>{
    // console.log(req.fname);
    //console.log(req.body.city);
 var weatherData;
-  const appid="c8988295f6758804ed36f7eb8fd2331a";
+  const appid="key";
   loc=req.body.cityName;
    const url="http://api.openweathermap.org/data/2.5/weather?q="+loc+"&appid="+appid+"&units=metric";
    http.get(url,(response,error)=>{
