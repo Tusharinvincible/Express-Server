@@ -1,0 +1,25 @@
+<%- include("header") -%>
+    <div class="main-block">
+       
+        <h3>Weather WebApplication</h3>
+
+        <div class="form-content">
+            <form method="post" action="/basic">
+
+            <label for="fname"> City Name: </label>
+
+            <input type="text" id="fname" name="cityName"  value="" placeholder="Nashik" autocomplete="off" > <br> <br>
+
+
+            <input type="submit"  id="" value="Submit">
+            <div class="display-block"></div>
+              <%  if(check){ %>
+                    <h4>The Temperature of city <%= nameOfCity %> is <%= temperature %> </h4>
+                 <%} %>
+           
+            
+            
+            </form>
+        </div>
+    </div>
+<%- include("footer") -%>
